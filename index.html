@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="main-container">
+        <div class="aside">
+            <div class="items">
+                <div class="heading1"><div class="heading2"><h2>Samuel</h2></div></div>
+                <ul>
+                    <li><a href="#" id="home" class="active" ><i class='bx bxs-home'></i>Home</a></li>
+                    <li><a href="#" id="about"><i class='bx bxs-user'></i>About</a></li>
+                    <li><a href="#" id="lecturers"><i class='bx bxs-group'></i>My Lecturers</a></li>
+                    <li><a href="#" id="contact"><i class='bx bxs-message-rounded-dots'></i>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content" id="home-section">
+            <nav>
+                <h2>My Personal <span>Website</span></h2>
+                 <!-- <button class="contact-btn">Contact</button> -->
+            </nav>
+            <div class="main-text">
+                <h2>Hello, my name is </h2>
+                <h1><span>Omodele Samuel</span></h1>
+                <div class="texts">
+                    <p>
+                    Welcome to my personal website. My name is Omodele Samuel, and I am a computer science
+                    student at the University of Ibadan. On this website, I will be sharing a brief story of my life, 
+                    my experience so far since gaining admission into the university, and a description of some of my lecturers.
+                    </p>
+                </div>
+                
+                <div class="btns">
+                    <button class="btn" id="btn-about">More About Me</button>
+                    <button class="btn" id="btn-lecturers">My Lecturers</button>
+                </div>
+            </div>
+            <div class="img1">
+                <img src="image.jpg" alt="">
+                <button class="contact-btn" id="btn-contact">Contact Me</button>
+            </div>
+        </div>
+        <div class="about" id="about-section">
+            <div class="heading">
+                <img src="image.jpg" alt="">
+                <div class="heading-text">
+                    <h1>Ab<span>out</span></h1>
+                    <h3>Omodele Samuel Oluwakorede</h3>
+                </div>
+            </div>
+            <div class="story">
+                <div class="story-heading"><h2>Story of my Life</h2></div>
+                <p>
+                    I was born and raised in Lagos, Nigeria. From a young age, I showed a strong aptitude for learning and was always eager to help others understand difficult concepts. I attended Ordained Leaders International School for my primary education, where I honed my academic skills and developed a passion for mathematics.
+                    For my secondary education, I attended Future Mirror Secondary School, where I excelled in my studies <span class="hidden" id="hidden-text1"> and became a respected figure among my peers. I was known for my dedication to learning and my willingness to help others, particularly in the area of mathematics. I participated in several academic competitions, including Cowbellpedia and Spelling Rumble, where I demonstrated my mastery of complex concepts and earned recognition for my achievements.
+                        Despite my busy schedule, I remained committed to community service and often spent my free time teaching younger students who struggled with mathematics. My passion for helping others eventually led me to become the best mathematics student in my school and to graduate with excellent results in my Senior Secondary Certificate Examination.
+                        In addition to my academic pursuits, I also had several hobbies that I enjoyed. I was an accomplished pianist and spent many hours playing mobile and video games. However, my ultimate career goal was to become a full stack web developer. With my natural talent for problem-solving and my passion for technology, I believed that this career path would allow me to make a positive impact on the world.
+                        Overall, My story is one of dedication, hard work, and a desire to help others. my academic achievements and community service have set me on a path towards success, and my passion for technology promises to make me a valuable contributor to the field of web development</span> <span id="more1" class="more">.... Read More</span> 
+                </p>
+            </div>
+            <div class="story">
+                <div class="story-heading"><h2>University Experience</h2></div>
+                <p>
+
+                    My time at university was a whirlwind of academic and extracurricular activities. Overall, my academic journey was positive, with some memorable moments and challenges along the way.
+                    In terms of my coursework, I had some great classes and Lecturers who really inspired me to learn and grow. However, there were also times when I felt frustrated with certain classes, especially when the lecturer simply read off their slides without <span class="hidden" id="hidden-text2">providing much additional explanation or context. Despite this, I persevered and studied hard, with some of my best courses being math and physics during my 100 level year. I remember spending long nights in the lecture theater with my friends, working through practice problems and discussing the material until we felt confident in our understanding.
+                    But university life wasn't just about academics for me. I also found myself drawn to various extracurricular activities and clubs on campus. Whether it was joining the debate team, volunteering for a community service project, or playing sports with my friends, I always felt like there was something to do and people to connect with. These experiences helped me to develop new skills, make new friends, and find a sense of purpose and belonging in the university community.
+                    Of course, there were also challenges that came with juggling both my academic and extracurricular pursuits. There were times when I felt overwhelmed by the sheer amount of work I had to do, or when I struggled to balance my various commitments. But I always tried to stay focused and organized, and I found that reaching out to friends and advisors for support was key to my success.
+                    Overall, my university experience was a time of growth, exploration, and discovery. From my academic coursework to my extracurricular activities, I learned so much about myself and the world around me, and I feel grateful for the opportunities that came my way.</span>
+                    <span id="more2" class="more">.... Read More</span>
+                    </p>
+            </div>
+        </div>
+        <div class="lecturer-section" id="lecturer-section">
+            <nav id="lecturer-navigation">
+                <div class="lecturer-heading"><h1>My <span>Lecturers</span></h1></div>
+                <ul>
+                    <li><a href="#" onclick="DisplayLecturer(1)">Dr Ayinla</a></li>
+                    <li><a href="#" onclick="DisplayLecturer(2)">Dr Sakpere</a></li>
+                    <li><a href="#" onclick="DisplayLecturer(3)">Dr Woods</a></li>
+                </ul>
+            </nav>
+            <div class="lecturers-writeup">
+                <section class="lecturer-story" id="DR-AYINLA">
+                    <div class="img-name">
+                        <img src="ayinla_site5.jpg" alt="">
+                        <div class="discription">
+                            <h3>Dr Isaiah Babatunde Ayinla</h3>
+                            <p>Software Engineering, Data Mining</p>
+                        </div>
+                    </div>
+                    <div class="writeup">
+                        <p>
+                            
+                            Dr Ayinla is an exceptional and dedicated lecturer who has been instrumental in shaping my academic career. Over the years, I have taken several courses under his tutelage, including CSC103, CSC235, and CSC293. Dr Ayinla is a demanding teacher who is committed to ensuring that his students understand the course material in-depth. Although he <div class="hidden space" id="hidden-text4">may not delve deeply into the subject matter during lectures, he challenges us to push beyond our limits and to think critically about the subject matter. His real-world practical exercises have been incredibly helpful to me as a person, and I appreciate his commitment to ensuring that we learn the material thoroughly. However, some students in my department find his assignments stressful, and I also find it challenging whenever he gives us difficult projects with heavy marks. Nevertheless, Dr Ayinla's impact on my academic journey has been invaluable.</div>
+                        </p>
+                    </div>
+                    <span id="more4" class="more">Read</span>
+                </section>
+                <section class="lecturer-story" id="DR-SAKPERE">
+                    <div class="img-name">
+                        <img src="sakpere.jpg" alt="">
+                        <div class="discription">
+                            <h3>Dr Aderonke Sakpere </h3>
+                            <p>Data Privacy</p>
+                        </div>
+                    </div>
+                    <div class="writeup">
+
+                        <p>
+                            
+                            Dr. Sakpere is a remarkable and dedicated person. As a CSC 102 lecturer in 100 level, she exhibited a deep understanding of her subject matter and delivered her lectures in a clear, concise, and engaging manner.
+                            One of Dr. Sakpere's most endearing qualities is her friendly and approachable nature. She was always available to her students, <div class="hidden space" id="hidden-text5">offering her support and guidance whenever it was needed. She went above and beyond her role as a lecturer by checking up on some students to see how they were coping with the course and providing assistance where necessary.
+                            In addition to being a supportive lecturer, Dr. Sakpere was an effective teacher who used various teaching methods to engage her students. Her explanations were always clear and easy to follow, and she provided helpful examples to illustrate difficult concepts.
+                            In short, Dr. Sakpere is an outstanding lecturer who embodies the qualities of a great teacher. Her ability to connect with her students, her effective teaching methods, and her passion for the subject matter have left a lasting impression on her students. </div>
+                        </p>
+                    </div>
+                    <span id="more5" class="more">Read</span>
+                </section>
+                <section class="lecturer-story" id="DR-WOODS">
+                    <div class="img-name">
+                        <img src="woods.jpg" alt="">
+                        <div class="discription">
+                            <h3>Dr Woods Chinyere Nancy</h3>
+                            <p>Image processing, digital electronics</p>
+                        </div>
+                    </div>
+                    <div class="writeup">
+                        <p>
+                        </p>
+                    </div>
+                    <span id="more6" class="more">Read</span>
+                    
+                </section>
+                <div class="display-all" id="display-all">Display all</div>
+            </div>
+        </div>
+        <div class="contact-section" id="contact-section">
+            <h1>My Contact</h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
